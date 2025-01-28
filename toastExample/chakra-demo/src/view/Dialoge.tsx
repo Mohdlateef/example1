@@ -12,6 +12,7 @@ import {
 } from "../components/ui/dialog"
 import { Button } from "../components/ui/button"
 
+
 export const Dialoge = () => {
     function handleCall() {
         console.log("hello");
@@ -25,7 +26,11 @@ export const Dialoge = () => {
                         Open Dialog
                     </Button>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent style={{
+                    background: "white",
+                    padding: "20px",
+                    boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)"
+                }}>
                     <DialogHeader>
                         <DialogTitle>Dialog Title</DialogTitle>
                     </DialogHeader>
